@@ -25,7 +25,7 @@
   <body ng-app="todo" ng-controller="TodoCtrl">
 
     <!-- HEADER -->
-    <ion-header-bar class="bar bar-header bar-positive">
+    <ion-header-bar class="bar bar-header bar-energized">
       <button class="button button-icon icon ion-ios7-minus-outline" ng-click="data.showDelete = !data.showDelete; data.showReorder = false"></button>
       <h1 class="title">Ma Todo List</h1>
       <button class="button button-icon ion-arrow-move" ng-click="data.showDelete = false; data.showReorder = !data.showReorder"></button>
@@ -53,7 +53,7 @@
 
         <ion-header-bar class="bar bar-header bar-stable">
           <h1 class="title">Nouvelle tâche</h1>
-          <button class="button button-clear button-positive" ng-click="closeNewTask()">Annuler</button>
+          <button class="button button-clear button-energized" ng-click="closeNewTask()">Annuler</button>
         </ion-header-bar>
 
         <ion-content>
@@ -64,7 +64,7 @@
               </label>
             </div>
             <div class="padding">
-              <button type="submit" class="button button-block button-positive">Ajouter</button>
+              <button type="submit" class="button button-block button-energized">Ajouter</button>
             </div>
           </form>
         </ion-content>
@@ -74,7 +74,7 @@
     </script>
 
     <!-- FOOTER -->
-    <ion-footer-bar class="bar bar-footer bar-positive">
+    <ion-footer-bar class="bar bar-footer bar-energized">
       <button class="button button-icon pull-right" ng-click="newTask()">
         <i class="icon ion-compose"></i>
       </button>
